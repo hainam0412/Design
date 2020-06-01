@@ -517,13 +517,9 @@ footer .footer__item p {
 
 .project__grid .project__image__wrap {
   width: 50%;
-  position: relative;
 }
 
 .project__grid .project__image__wrap img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
