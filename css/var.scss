@@ -1,0 +1,71 @@
+$text-color:#171717;
+$text-grey:#b3b3b3;
+$grid-color-odd:#838383;
+$grid-color-even:#dddddd;
+$link-grey:#bcbcbc;
+$hover:#21bfb9;
+$about-primary-color:#10c9c3;
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul , li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.5s;
+}
+
+@mixin flex($align:stretch,$justify:space-between,$dir:row,$wrap:wrap) {
+    display:flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+@font-face {
+    font-family: Sign;
+    src: url('../font/SVN-Astronout/SVN-Astronout/SVN-Astronout.otf');
+}
+
+.container{
+    padding: 0 10rem;
+}
+
+.pd-container{
+    padding:{
+        top:10rem;
+        bottom: 10rem;
+    }
+}
+
+.btn{
+    background-color: $about-primary-color;
+    text-transform: uppercase;
+    padding: 2rem 5rem;
+    color:#fff;
+    font-size: 1.2rem;
+    
+    &:hover{
+        color: $text-color;
+    }  
+    
+}
+
+img{
+    object-fit: contain;
+}

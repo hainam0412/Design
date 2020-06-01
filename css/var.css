@@ -1,0 +1,49 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+@font-face {
+  font-family: Sign;
+  src: url("../font/SVN-Astronout/SVN-Astronout/SVN-Astronout.otf");
+}
+
+.container {
+  padding: 0 10rem;
+}
+
+.pd-container {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.btn {
+  background-color: #10c9c3;
+  text-transform: uppercase;
+  padding: 2rem 5rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  color: #171717;
+}
+
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=var.css.map */
